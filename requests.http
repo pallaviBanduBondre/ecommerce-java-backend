@@ -1,0 +1,107 @@
+### 1. Get all products
+GET http://localhost:8080/api/products
+
+
+### 2. Create a product
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "name": "iphone",
+  "price": 55000,
+  "category": "Electronics"
+}
+
+
+### 3. Create another product
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "name": "Wireless Mouse",
+  "price": 1200,
+  "category": "Accessories"
+}
+
+
+### 4. Create another product
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "name": "Mechanical Keyboard",
+  "price": 3500,
+  "category": "Accessories"
+}
+
+
+### 5. Get all products again
+GET http://localhost:8080/api/products
+
+### Get product by ID
+GET http://localhost:8080/api/products/6abff1f91a2012f53ea9bc53
+
+### 7. Update Laptop
+PUT http://localhost:8080/api/products/6abff1f21a2012f53ea9bc52
+Content-Type: application/json
+
+{
+  "name": "Gaming Laptop",
+  "price": 66000,
+  "category": "Electronics"
+}
+
+### 9. Delete product
+DELETE http://localhost:8080/api/products/6abff1f21a2012f53ea9bc52
+
+### 7. Update Laptop
+PUT http://localhost:8080/api/products/6abff32d1a2012f53ea9bc54
+Content-Type: application/json
+
+{
+  "name": "iPhone 17",
+  "price": 75000,
+  "category": "Electronics"
+}
+
+###  Create another product
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "name": "Delete Test Product",
+  "price": 1000,
+  "category": "Test"
+}
+
+###  Delete product
+DELETE http://localhost:8080/api/products/6ac258d5838545517b060dba
+
+### Register User
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Test User",
+  "email": "Testuser@gmail.com",
+  "password": "Test@12345"
+}
+
+### Register User
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "conpalb",
+  "email": "Conpalb@gmail.com",
+  "password": "pal@12345"
+}
+
+### Login User
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "testuser@gmail.com",
+  "password": "Test@12345"
+}
